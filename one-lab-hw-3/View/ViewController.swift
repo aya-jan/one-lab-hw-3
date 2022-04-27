@@ -20,10 +20,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(welcomeButton)
+        layoutSubviews()
         welcomeButton.addTarget(self, action: #selector(tapOnButton), for: UIControl.Event.touchUpInside)
     }
     
-    override func viewDidLayoutSubviews() {
+     func layoutSubviews() {
         super.viewDidLayoutSubviews()
         welcomeButton.snp.makeConstraints{
             $0.center.equalToSuperview()
@@ -31,13 +32,7 @@ class ViewController: UIViewController {
     }
     
     @objc func tapOnButton(){
-        
-     //   let navigationController = UINavigationController(rootViewController: myFriendsViewController)
         print("touched")
-    //    self.view.addSubview(navigationController.view)
-     //   self.addChild(navigationController)
-      //  navigationController.didMove(toParent: myFriendsViewController)
-        
         let tabBarVC = UITabBarController()
         tabBarVC.tabBar.backgroundColor = .gray
         

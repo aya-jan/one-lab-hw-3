@@ -25,6 +25,11 @@
 		03B7DA292812ADB900F31941 /* MyFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7DA282812ADB900F31941 /* MyFriendsCell.swift */; };
 		03B7DA2B2812B02F00F31941 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7DA2A2812B02F00F31941 /* FriendModel.swift */; };
 		03B7DA2F2812B1A700F31941 /* UserStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7DA2E2812B1A700F31941 /* UserStatusModel.swift */; };
+		03D1EA482818E63E008A43F0 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1EA472818E63E008A43F0 /* AddFriendsViewController.swift */; };
+		03D1EA4A2818EA55008A43F0 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1EA492818EA55008A43F0 /* ConfigurableCell.swift */; };
+		03D1EA4C2818EAB6008A43F0 /* AddNewContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1EA4B2818EAB6008A43F0 /* AddNewContactsCell.swift */; };
+		03D1EA4E2818EAD2008A43F0 /* YouMightKnowFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1EA4D2818EAD2008A43F0 /* YouMightKnowFriendCell.swift */; };
+		03D1EA502818EAEE008A43F0 /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D1EA4F2818EAEE008A43F0 /* CellConfigurator.swift */; };
 		17316F7E8DD3F60EA65FE02C /* Pods_one_lab_hw_3_one_lab_hw_3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663E4940C3B98A1BBAE304E8 /* Pods_one_lab_hw_3_one_lab_hw_3UITests.framework */; };
 		A784460234D4A6C2F10BCDCB /* Pods_one_lab_hw_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CC193269F77EBCF192DC13 /* Pods_one_lab_hw_3.framework */; };
 		A84995BA5F058497BBEF8D08 /* Pods_one_lab_hw_3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F35F7EC252FBC322C80296A /* Pods_one_lab_hw_3Tests.framework */; };
@@ -70,6 +75,11 @@
 		03B7DA282812ADB900F31941 /* MyFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsCell.swift; sourceTree = "<group>"; };
 		03B7DA2A2812B02F00F31941 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		03B7DA2E2812B1A700F31941 /* UserStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatusModel.swift; sourceTree = "<group>"; };
+		03D1EA472818E63E008A43F0 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		03D1EA492818EA55008A43F0 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		03D1EA4B2818EAB6008A43F0 /* AddNewContactsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContactsCell.swift; sourceTree = "<group>"; };
+		03D1EA4D2818EAD2008A43F0 /* YouMightKnowFriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouMightKnowFriendCell.swift; sourceTree = "<group>"; };
+		03D1EA4F2818EAEE008A43F0 /* CellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
 		06CF65D42C623239A7505C8C /* Pods-one-lab-hw-3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one-lab-hw-3.release.xcconfig"; path = "Target Support Files/Pods-one-lab-hw-3/Pods-one-lab-hw-3.release.xcconfig"; sourceTree = "<group>"; };
 		0F35F7EC252FBC322C80296A /* Pods_one_lab_hw_3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_one_lab_hw_3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CC193269F77EBCF192DC13 /* Pods_one_lab_hw_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_one_lab_hw_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,12 +144,11 @@
 		03439C4E2811F0350064F354 /* one-lab-hw-3 */ = {
 			isa = PBXGroup;
 			children = (
+				03D1EA512818EB00008A43F0 /* ApplicationLayer */,
 				03B7DA272812ACE400F31941 /* Cells */,
 				03B7DA262812ACD400F31941 /* Model */,
 				03B7DA252812ACCB00F31941 /* ViewModel */,
 				03439C822811F06E0064F354 /* View */,
-				03439C4F2811F0350064F354 /* AppDelegate.swift */,
-				03439C512811F0350064F354 /* SceneDelegate.swift */,
 				03439C552811F0350064F354 /* Main.storyboard */,
 				03439C5B2811F03A0064F354 /* Assets.xcassets */,
 				03439C5D2811F03A0064F354 /* LaunchScreen.storyboard */,
@@ -174,6 +183,7 @@
 				0327DC2B2812DCD60002C0C2 /* MyFeedViewController.swift */,
 				0327DC2F2812DDC10002C0C2 /* MyPinsViewController.swift */,
 				0327DC312812DDED0002C0C2 /* MyProfileViewController.swift */,
+				03D1EA472818E63E008A43F0 /* AddFriendsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,8 +209,21 @@
 			isa = PBXGroup;
 			children = (
 				03B7DA282812ADB900F31941 /* MyFriendsCell.swift */,
+				03D1EA492818EA55008A43F0 /* ConfigurableCell.swift */,
+				03D1EA4B2818EAB6008A43F0 /* AddNewContactsCell.swift */,
+				03D1EA4D2818EAD2008A43F0 /* YouMightKnowFriendCell.swift */,
+				03D1EA4F2818EAEE008A43F0 /* CellConfigurator.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		03D1EA512818EB00008A43F0 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				03439C4F2811F0350064F354 /* AppDelegate.swift */,
+				03439C512811F0350064F354 /* SceneDelegate.swift */,
+			);
+			path = ApplicationLayer;
 			sourceTree = "<group>";
 		};
 		6D0E2B04B8E10AD43364E9DC /* Pods */ = {
@@ -469,13 +492,18 @@
 				03B784D02811F65300E547D1 /* MyFriendsViewController.swift in Sources */,
 				03B7DA2B2812B02F00F31941 /* FriendModel.swift in Sources */,
 				0327DC2C2812DCD60002C0C2 /* MyFeedViewController.swift in Sources */,
+				03D1EA4E2818EAD2008A43F0 /* YouMightKnowFriendCell.swift in Sources */,
 				03B7DA292812ADB900F31941 /* MyFriendsCell.swift in Sources */,
+				03D1EA482818E63E008A43F0 /* AddFriendsViewController.swift in Sources */,
+				03D1EA4C2818EAB6008A43F0 /* AddNewContactsCell.swift in Sources */,
 				03439C542811F0350064F354 /* ViewController.swift in Sources */,
 				0327DC322812DDED0002C0C2 /* MyProfileViewController.swift in Sources */,
 				03B7DA2F2812B1A700F31941 /* UserStatusModel.swift in Sources */,
 				0327DC2A2812C7E10002C0C2 /* Storage.swift in Sources */,
+				03D1EA4A2818EA55008A43F0 /* ConfigurableCell.swift in Sources */,
 				03439C5A2811F0350064F354 /* one_lab_hw_3.xcdatamodeld in Sources */,
 				03439C502811F0350064F354 /* AppDelegate.swift in Sources */,
+				03D1EA502818EAEE008A43F0 /* CellConfigurator.swift in Sources */,
 				03439C522811F0350064F354 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
